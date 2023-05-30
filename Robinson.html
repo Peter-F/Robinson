@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<!--git@github.com:Peter-F/Robinson.git-->
 <html>
 <head>
-  <title>Code Pagina</title>
+  <title>Startpagina</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
 </head>
 <body>
     <div class="banner">
         <img src="Images\robinson.png" alt="Banner">
-    </div>  
-    <h1 id="pageTitle">Schattenjacht - Code Invoeren</h1>
-    <img id="schatkistPic" alt="Schatkist" class="image">
+    </div>
+    <h1>Klik op de juiste schatkist om deze mogen openen</h1>
 
+  <bodytreasure>
+    <div class="schatkist">
+        <a href="code.html?kleur=paarse">
+            <img src="Images\Schatkist paarse.jpg">
+        </a>
+    </div>
 
-  <h1 id="kleurTitel"></h1>
-  <input type="text" id="codeInput" placeholder="Voer de code in">
-  <button onclick="checkCode()">Controleer</button>
-  <br>
-  <div id="resultaat"></div>
-  <br>
-  <button onclick="goToStart()">Terug</button>
+    <div class="schatkist">
+    <a href="code.html?kleur=blauwe">
+    <img src="Images\Schatkist blauwe.jpg">
+    </a>
+    </div>
 
-  <script>
-    window.onload = function() {
-        var queryParams = new URLSearchParams(window.location.search);
-        var kleur = queryParams.get("kleur");
-        
-        if (typeof kleur === 'string' && kleur.length > 0) {
-        var pageTitle = document.getElementById("pageTitle");
-        var schatkistPic = document.getElementById("schatkistPic");
+    <div class="schatkist">
+    <a href="code.html?kleur=groene"><img src="Images\Schatkist groene.jpg" alt="Banner"></a>
+    </div>
 
-        pageTitle.innerHTML = "Jullie willen dus de " + kleur + " schatkist openen";
-        schatkistPic.src = "Images/schatkist "+ kleur + ".jpg"; 
-        }
-    }
+    <div class="schatkist">
+    <a href="code.html?kleur=oranje"><img src="Images\Schatkist oranje.jpg" alt="Banner"></a>
+    </div>
 
-    document.getElementById("codeInput").addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        checkCode(); }
-    })
-</script>
+    <div class="schatkist">
+    <a href="code.html?kleur=roze"><img src="Images\Schatkist roze.jpg" alt="Banner"></a>
+    </div>
+
+    <div class="schatkist">
+    <a href="code.html?kleur=zwarte"><img src="Images\Schatkist zwarte.jpg" alt="Banner"></a>
+    </div>
+    </bodytreasure>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
