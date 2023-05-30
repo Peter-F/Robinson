@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+}
+
+bodytreasure {
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Definieert 3 kolommen */
+    grid-template-rows: repeat(2, 1fr); /* Definieert 2 rijen */    
+    justify-content: center;
+    align-items: center;    
+}
+    
+h1 {
+    color: black;
+}
+  
+#resultaat {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.banner {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+  
+.rode-pagina {
+    background-color: red;
+    color: white;    
+}
+  
+.schatkist {
+    width: auto;
+    height: auto;        
+    cursor: pointer;
+}
+
+input {
+    font-size: 32px; /* Pas het gewenste groottegetal aan */
+  }
+
+button{
+    font-size: 32px; /* Pas het gewenste groottegetal aan */
+}
+  
